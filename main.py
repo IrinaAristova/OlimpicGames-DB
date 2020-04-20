@@ -1,7 +1,7 @@
 import cx_Oracle
 
-username = 'sys'
-password = '123Xfcjd123'
+username = 'Aristova'
+password = 'Aristova'
 databaseName = 'localhost/xe'
 connection = cx_Oracle.connect(username, password, databaseName)
 cursor = connection.cursor()
@@ -18,7 +18,8 @@ Where (Medal.id_athlete = AthleteID)
 And (Medal.id_competition = Competition.id)
 And (Competition.year = 2008)
 GROUP BY CountryName)
-WHERE (Cnt > 30)"""
+WHERE (Cnt > 30)
+"""
 
 cursor.execute(query)
 
@@ -51,7 +52,8 @@ From Athlete
 Where (Athlete.id_country = 118))
 ON (Medal.id_athlete = AthleteID)
 INNER JOIN Competition ON (Medal.id_competition = Competition.id)
-GROUP BY year ORDER BY year"""
+GROUP BY year ORDER BY year
+"""
 
 cursor.execute(query)
 
