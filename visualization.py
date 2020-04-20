@@ -11,9 +11,8 @@ def fileId_from_url(url):
     raw_fileId = re.findall("~[0-z.]+/[0-9]+", url)[0][1: ]
     return raw_fileId.replace('/', ':')
 
-username = 'sys'
-
-password = '123Xfcjd123'
+username = 'Aristova'
+password = 'Aristova'
 
 database = 'localhost/xe'
 connection = cx_Oracle.connect(username,password, database)
