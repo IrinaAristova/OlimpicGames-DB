@@ -13,7 +13,7 @@ CREATE TABLE Sport(
     id INT NOT NULL PRIMARY KEY,
     category VARCHAR (50),
     discipline VARCHAR (50),
-    events VARCHAR (50)
+    event VARCHAR (50)
 );
 
 CREATE TABLE Competition(
